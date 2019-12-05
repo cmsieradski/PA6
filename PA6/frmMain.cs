@@ -63,5 +63,36 @@ namespace PA6
 
             }
         }
+
+        private void btnRent_Click(object sender, EventArgs e)
+        {
+            Book myBook = (Book)lstBooks.SelectedItem;
+
+            myBook.copies--;
+            BookFile.SaveBook(myBook, cwid, "edit");
+            LoadList();
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            Book myBook = (Book)lstBooks.SelectedItem;
+
+            myBook.copies++;
+            BookFile.SaveBook(myBook, cwid, "edit");
+            LoadList();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Book myBook = (Book)lstBooks.SelectedItem;
+
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete?", "Delete", MessageBoxButtons.YesNo);
+
+            if(dialogResult == DialogResult.Yes)
+            {
+                BookFile.DeleteBook(myBook, cwid);
+                LoadList();
+            }
+        }
     }
 }
