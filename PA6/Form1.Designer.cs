@@ -59,6 +59,7 @@
             this.btnOk.TabIndex = 2;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.BtnOk_Click);
             // 
             // btnClose
             // 
@@ -80,7 +81,7 @@
             this.Controls.Add(this.txtCWID);
             this.Controls.Add(this.lblCWID);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmCWID";
             this.Text = "CWID";
             this.ResumeLayout(false);

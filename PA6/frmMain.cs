@@ -12,9 +12,17 @@ namespace PA6
 {
     public partial class frmMain : Form
     {
-        public frmMain()
+        string cwid;
+
+        public frmMain(string tempCwid)
         {
+            this.cwid = tempCwid;
             InitializeComponent();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
