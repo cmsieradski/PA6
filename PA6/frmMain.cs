@@ -94,5 +94,33 @@ namespace PA6
                 LoadList();
             }
         }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+            Book myBook = (Book)lstBooks.SelectedItem;
+            frmEdit myForm = new frmEdit(myBook, "edit", cwid);
+            if (myForm.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+            else
+            {
+                LoadList();
+            }
+        }
+
+        private void BtnNew_Click(object sender, EventArgs e)
+        {
+            Book myBook = new Book();
+            frmEdit myForm = new frmEdit(myBook, "new", cwid);
+            if (myForm.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+            else
+            {
+                LoadList();
+            }
+        }
     }
 }
