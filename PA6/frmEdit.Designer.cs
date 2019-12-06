@@ -50,133 +50,119 @@
             // 
             // txtLengthData
             // 
-            this.txtLengthData.Location = new System.Drawing.Point(20, 333);
+            this.txtLengthData.Location = new System.Drawing.Point(20, 351);
             this.txtLengthData.Name = "txtLengthData";
-            this.txtLengthData.Size = new System.Drawing.Size(199, 29);
+            this.txtLengthData.Size = new System.Drawing.Size(199, 34);
             this.txtLengthData.TabIndex = 23;
-            this.txtLengthData.TextChanged += new System.EventHandler(this.TxtLengthData_TextChanged);
             // 
             // lblLength
             // 
             this.lblLength.AutoSize = true;
-            this.lblLength.Location = new System.Drawing.Point(16, 306);
+            this.lblLength.Location = new System.Drawing.Point(16, 324);
             this.lblLength.Name = "lblLength";
-            this.lblLength.Size = new System.Drawing.Size(68, 24);
+            this.lblLength.Size = new System.Drawing.Size(86, 29);
             this.lblLength.TabIndex = 22;
             this.lblLength.Text = "Length";
-            this.lblLength.Click += new System.EventHandler(this.LblLength_Click);
             // 
             // txtIsbnData
             // 
-            this.txtIsbnData.Location = new System.Drawing.Point(20, 270);
+            this.txtIsbnData.Location = new System.Drawing.Point(20, 288);
             this.txtIsbnData.Name = "txtIsbnData";
-            this.txtIsbnData.Size = new System.Drawing.Size(199, 29);
+            this.txtIsbnData.Size = new System.Drawing.Size(199, 34);
             this.txtIsbnData.TabIndex = 21;
-            this.txtIsbnData.TextChanged += new System.EventHandler(this.TxtIsbnData_TextChanged);
             // 
             // lblIsbn
             // 
             this.lblIsbn.AutoSize = true;
-            this.lblIsbn.Location = new System.Drawing.Point(16, 246);
+            this.lblIsbn.Location = new System.Drawing.Point(16, 264);
             this.lblIsbn.Name = "lblIsbn";
-            this.lblIsbn.Size = new System.Drawing.Size(52, 24);
+            this.lblIsbn.Size = new System.Drawing.Size(69, 29);
             this.lblIsbn.TabIndex = 20;
             this.lblIsbn.Text = "ISBN";
-            this.lblIsbn.Click += new System.EventHandler(this.LblIsbn_Click);
             // 
             // txtCopiesData
             // 
-            this.txtCopiesData.Location = new System.Drawing.Point(19, 211);
+            this.txtCopiesData.Location = new System.Drawing.Point(19, 229);
             this.txtCopiesData.Name = "txtCopiesData";
-            this.txtCopiesData.Size = new System.Drawing.Size(199, 29);
+            this.txtCopiesData.Size = new System.Drawing.Size(199, 34);
             this.txtCopiesData.TabIndex = 19;
-            this.txtCopiesData.TextChanged += new System.EventHandler(this.TxtCopiesData_TextChanged);
             // 
             // lblCopies
             // 
             this.lblCopies.AutoSize = true;
-            this.lblCopies.Location = new System.Drawing.Point(15, 184);
+            this.lblCopies.Location = new System.Drawing.Point(15, 202);
             this.lblCopies.Name = "lblCopies";
-            this.lblCopies.Size = new System.Drawing.Size(111, 24);
+            this.lblCopies.Size = new System.Drawing.Size(142, 29);
             this.lblCopies.TabIndex = 18;
             this.lblCopies.Text = "Copies Avlb";
-            this.lblCopies.Click += new System.EventHandler(this.LblCopies_Click);
             // 
             // txtGenreData
             // 
-            this.txtGenreData.Location = new System.Drawing.Point(22, 151);
+            this.txtGenreData.Location = new System.Drawing.Point(22, 169);
             this.txtGenreData.Name = "txtGenreData";
-            this.txtGenreData.Size = new System.Drawing.Size(199, 29);
+            this.txtGenreData.Size = new System.Drawing.Size(199, 34);
             this.txtGenreData.TabIndex = 17;
-            this.txtGenreData.TextChanged += new System.EventHandler(this.TxtGenreData_TextChanged);
             // 
             // lblGenre
             // 
             this.lblGenre.AutoSize = true;
-            this.lblGenre.Location = new System.Drawing.Point(18, 124);
+            this.lblGenre.Location = new System.Drawing.Point(18, 142);
             this.lblGenre.Name = "lblGenre";
-            this.lblGenre.Size = new System.Drawing.Size(63, 24);
+            this.lblGenre.Size = new System.Drawing.Size(80, 29);
             this.lblGenre.TabIndex = 16;
             this.lblGenre.Text = "Genre";
-            this.lblGenre.Click += new System.EventHandler(this.LblGenre_Click);
             // 
             // txtAuthorData
             // 
-            this.txtAuthorData.Location = new System.Drawing.Point(23, 91);
+            this.txtAuthorData.Location = new System.Drawing.Point(23, 109);
             this.txtAuthorData.Name = "txtAuthorData";
-            this.txtAuthorData.Size = new System.Drawing.Size(199, 29);
+            this.txtAuthorData.Size = new System.Drawing.Size(199, 34);
             this.txtAuthorData.TabIndex = 15;
-            this.txtAuthorData.TextChanged += new System.EventHandler(this.TxtAuthorData_TextChanged);
             // 
             // lblAuthor
             // 
             this.lblAuthor.AutoSize = true;
-            this.lblAuthor.Location = new System.Drawing.Point(19, 64);
+            this.lblAuthor.Location = new System.Drawing.Point(19, 82);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(66, 24);
+            this.lblAuthor.Size = new System.Drawing.Size(82, 29);
             this.lblAuthor.TabIndex = 14;
             this.lblAuthor.Text = "Author";
-            this.lblAuthor.Click += new System.EventHandler(this.LblAuthor_Click);
             // 
             // txtTitleData
             // 
-            this.txtTitleData.Location = new System.Drawing.Point(24, 29);
+            this.txtTitleData.Location = new System.Drawing.Point(24, 47);
             this.txtTitleData.Name = "txtTitleData";
-            this.txtTitleData.Size = new System.Drawing.Size(199, 29);
+            this.txtTitleData.Size = new System.Drawing.Size(199, 34);
             this.txtTitleData.TabIndex = 13;
-            this.txtTitleData.TextChanged += new System.EventHandler(this.TxtTitleData_TextChanged);
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(20, 2);
+            this.lblTitle.Location = new System.Drawing.Point(20, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(45, 24);
+            this.lblTitle.Size = new System.Drawing.Size(61, 29);
             this.lblTitle.TabIndex = 12;
             this.lblTitle.Text = "Title";
-            this.lblTitle.Click += new System.EventHandler(this.LblTitle_Click);
             // 
             // txtCoverData
             // 
-            this.txtCoverData.Location = new System.Drawing.Point(20, 396);
+            this.txtCoverData.Location = new System.Drawing.Point(20, 421);
             this.txtCoverData.Name = "txtCoverData";
-            this.txtCoverData.Size = new System.Drawing.Size(199, 29);
+            this.txtCoverData.Size = new System.Drawing.Size(199, 34);
             this.txtCoverData.TabIndex = 25;
-            this.txtCoverData.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // lblCover
             // 
             this.lblCover.AutoSize = true;
-            this.lblCover.Location = new System.Drawing.Point(16, 369);
+            this.lblCover.Location = new System.Drawing.Point(16, 394);
             this.lblCover.Name = "lblCover";
-            this.lblCover.Size = new System.Drawing.Size(101, 24);
+            this.lblCover.Size = new System.Drawing.Size(130, 29);
             this.lblCover.TabIndex = 24;
             this.lblCover.Text = "Cover URL";
-            this.lblCover.Click += new System.EventHandler(this.Label1_Click);
             // 
             // pbCover
             // 
-            this.pbCover.Location = new System.Drawing.Point(246, 29);
+            this.pbCover.Location = new System.Drawing.Point(264, 47);
             this.pbCover.Name = "pbCover";
             this.pbCover.Size = new System.Drawing.Size(198, 256);
             this.pbCover.TabIndex = 26;
@@ -184,18 +170,19 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(246, 377);
+            this.btnSave.Location = new System.Drawing.Point(264, 393);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(93, 48);
+            this.btnSave.Size = new System.Drawing.Size(99, 62);
             this.btnSave.TabIndex = 27;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(351, 377);
+            this.btnClose.Location = new System.Drawing.Point(369, 394);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(93, 48);
+            this.btnClose.Size = new System.Drawing.Size(99, 62);
             this.btnClose.TabIndex = 28;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -203,9 +190,9 @@
             // 
             // frmEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 441);
+            this.ClientSize = new System.Drawing.Size(495, 572);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.pbCover);
@@ -223,8 +210,8 @@
             this.Controls.Add(this.lblAuthor);
             this.Controls.Add(this.txtTitleData);
             this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmEdit";
             this.Text = "frmEdit";
             this.Load += new System.EventHandler(this.FrmEdit_Load);

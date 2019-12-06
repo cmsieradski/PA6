@@ -99,7 +99,7 @@ namespace PA6
         {
             Book myBook = (Book)lstBooks.SelectedItem;
             frmEdit myForm = new frmEdit(myBook, "edit", cwid);
-            if (myForm.ShowDialog() == DialogResult.OK)
+            if(myForm.ShowDialog() == DialogResult.OK)
             {
 
             }

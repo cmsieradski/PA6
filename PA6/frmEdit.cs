@@ -21,77 +21,7 @@ namespace PA6
             cwid = tempCwid;
             mode = tempMode;
             InitializeComponent();
-            pbCover.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
-
-        private void TxtLengthData_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblLength_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtIsbnData_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblIsbn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtCopiesData_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblCopies_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtGenreData_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblGenre_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtAuthorData_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblAuthor_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtTitleData_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            pbCover.SizeMode = PictureBoxSizeMode.StretchImage; 
         }
 
         private void FrmEdit_Load(object sender, EventArgs e)
@@ -103,8 +33,8 @@ namespace PA6
                 txtGenreData.Text = myBook.genre;
                 txtCopiesData.Text = myBook.copies.ToString();
                 txtIsbnData.Text = myBook.isbn;
-                txtCoverData.Text = myBook.cover;
                 txtLengthData.Text = myBook.len.ToString();
+                txtCoverData.Text = myBook.cover;
 
                 pbCover.Load(myBook.cover);
             }
@@ -112,7 +42,26 @@ namespace PA6
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); 
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            myBook.title = txtTitleData.Text;
+            myBook.author = txtAuthorData.Text;
+            myBook.genre = txtGenreData.Text;
+            myBook.copies = int.Parse(txtCopiesData.Text);
+            myBook.isbn = txtIsbnData.Text;
+            myBook.len = int.Parse(txtLengthData.Text);
+            myBook.cover = txtCoverData.Text;
+            //Console.WriteLine(cwid);
+            //Console.ReadKey();
+            myBook.cwid = cwid;
+
+            BookFile.SaveBook(myBook, cwid, mode);
+
+            MessageBox.Show("Content was saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close(); 
         }
     }
 }
