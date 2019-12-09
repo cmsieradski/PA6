@@ -12,7 +12,7 @@ namespace PA6
 {
     public partial class FrmCWID : Form
     {
-        public FrmCWID()
+        public FrmCWID()  //cwid entry form
         {
             InitializeComponent();
         }
@@ -24,10 +24,10 @@ namespace PA6
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); //closes the form
         }
 
-        private void BtnOk_Click(object sender, EventArgs e)
+        private void BtnOk_Click(object sender, EventArgs e) //takes cwid and opens main menu
         {
             this.Hide();
             frmMain myForm = new frmMain(txtCWID.Text);

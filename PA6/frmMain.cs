@@ -15,7 +15,7 @@ namespace PA6
         string cwid;
         List<Book> myBooks;
 
-        public frmMain(string tempCwid)
+        public frmMain(string tempCwid) //main menu that lists the books and relevant information
         {
             this.cwid = tempCwid;
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace PA6
             LoadList();
         }
 
-        private void LoadList()
+        private void LoadList()  //method to keep the list up to date
         {
             myBooks = BookFile.GetAllBooks(cwid);
             lstBooks.DataSource = myBooks;
@@ -40,19 +40,19 @@ namespace PA6
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); //closes out the menu (and the entire program)
         }
 
         private void LstBooks_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Book myBook = (Book)lstBooks.SelectedItem;
+            Book myBook = (Book)lstBooks.SelectedItem; //changes selected book
 
             txtTitleData.Text = myBook.title;
             txtAuthorData.Text = myBook.author;
             txtGenreData.Text = myBook.genre;
             txtIsbnData.Text = myBook.isbn;
             txtCopiesData.Text = myBook.copies.ToString();
-            txtLengthData.Text = myBook.len.ToString();
+            txtLengthData.Text = myBook.length.ToString();
 
             try
             {
@@ -66,7 +66,7 @@ namespace PA6
 
         private void btnRent_Click(object sender, EventArgs e)
         {
-            Book myBook = (Book)lstBooks.SelectedItem;
+            Book myBook = (Book)lstBooks.SelectedItem; //rents the book
 
             myBook.copies--;
             BookFile.SaveBook(myBook, cwid, "edit");
@@ -75,7 +75,7 @@ namespace PA6
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            Book myBook = (Book)lstBooks.SelectedItem;
+            Book myBook = (Book)lstBooks.SelectedItem; //returns the book
 
             myBook.copies++;
             BookFile.SaveBook(myBook, cwid, "edit");
@@ -84,9 +84,9 @@ namespace PA6
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Book myBook = (Book)lstBooks.SelectedItem;
+            Book myBook = (Book)lstBooks.SelectedItem; //deletes the book
 
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete?", "Delete", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete?", "Delete", MessageBoxButtons.YesNo); //confirms deletion
 
             if(dialogResult == DialogResult.Yes)
             {
@@ -95,7 +95,7 @@ namespace PA6
             }
         }
 
-        private void BtnEdit_Click(object sender, EventArgs e)
+        private void BtnEdit_Click(object sender, EventArgs e) //opens the edit menu
         {
             Book myBook = (Book)lstBooks.SelectedItem;
             frmEdit myForm = new frmEdit(myBook, "edit", cwid);
@@ -109,7 +109,7 @@ namespace PA6
             }
         }
 
-        private void BtnNew_Click(object sender, EventArgs e)
+        private void BtnNew_Click(object sender, EventArgs e) //also opens the edit menu, but in the new configuration
         {
             Book myBook = new Book();
             frmEdit myForm = new frmEdit(myBook, "new", cwid);
